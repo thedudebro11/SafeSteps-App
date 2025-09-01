@@ -1,0 +1,26 @@
+{
+  "name": "safesteps-rn",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "postCreateCommand": "npm ci",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shellIntegration.enabled": true
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-vsliveshare.vsliveshare"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+  "containerEnv": {
+    "EXPO_NO_TELEMETRY": "1"
+  },
+  "forwardPorts": [8081, 19000, 19001, 19002]
+}

@@ -1,0 +1,29 @@
+# Node / RN
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# Expo / RN build output
+.expo/
+.expo-shared/
+dist/
+web-build/
+ios/
+android/
+
+# OS / editor
+.DS_Store
+*.swp
+.vscode/
+
+# Env & secrets
+.env
+.env.*
+*.keystore
+*.jks
+
+# EAS / build artifacts
+*.tar.gz
+*.ipa
+*.apk
+*.aab

@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "SafeSteps",
+    "slug": "safesteps",
+    "scheme": "safesteps",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/placeholder-project-id"
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.safesteps.app",
+      "infoPlist": {
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "SafeSteps needs your location to track and share your position when you enable Active Tracking or Emergency mode.",
+        "NSLocationWhenInUseUsageDescription": "SafeSteps uses your location to show your real-time position on the map.",
+        "UIBackgroundModes": [
+          "location",
+          "processing"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.safesteps.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "WAKE_LOCK",
+        "VIBRATE",
+        "INTERNET",
+        "POST_NOTIFICATIONS"
+      ],
+      "useNextNotificationsApi": true
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow SafeSteps to access your location in the background for tracking when enabled."
+        }
+      ],
+      "expo-notifications"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "placeholder-project-id"
+      },
+      "SUPABASE_URL": "https://YOUR-PROJECT.supabase.co",
+      "SUPABASE_ANON_KEY": "YOUR_SUPABASE_ANON_KEY",
+      "API_BASE_URL": "https://api.safesteps.yourdomain.com"
+    }
+  }
+}
