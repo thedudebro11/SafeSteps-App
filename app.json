@@ -54,7 +54,8 @@
           "locationAlwaysAndWhenInUsePermission": "Allow SafeSteps to access your location in the background for tracking when enabled."
         }
       ],
-      "expo-notifications"
+      "expo-notifications",
+      "expo-secure-store"
     ],
     "extra": {
       "eas": {

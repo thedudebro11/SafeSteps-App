@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  presets: [require('nativewind/preset')],
-  content: ['./App.{js,jsx,ts,tsx}','./src/**/*.{js,jsx,ts,tsx}'],
+  content: ["./App.{js,jsx,ts,tsx}", "./src/**/*.{js,jsx,ts,tsx}"],
+  presets: [require("nativewind/preset")],
   theme: {
     extend: {
-      colors: { brand: { DEFAULT: '#3896ff', dark: '#1e5fb3' } },
-      borderRadius: { '2xl': '1.5rem' },
-    },
+      colors: {
+        brand: "#2563eb"
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };
