@@ -1,7 +1,7 @@
 {
   "name": "safesteps-rn",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
-  "postCreateCommand": "npm ci",
+  "postCreateCommand": "npm ci || npm install && sudo apt-get update && sudo apt-get install -y pipx && pipx ensurepath && sh -lc 'echo \"export PATH=\\\"$HOME/.local/bin:$PATH\\\"\" >> ~/.bashrc' && sh -lc 'export PATH=\\\"$HOME/.local/bin:$PATH\\\" && pipx install ggshield'",
   "customizations": {
     "vscode": {
       "settings": {
