@@ -1,5 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, Text, View } from 'react-native';
+import { Alert } from 'react-native'; // non-view API stays from RN if you use it
 type Props = { active: boolean; onPress: () => void; };
 export default function EmergencyButton({ active, onPress }: Props) {
   return (

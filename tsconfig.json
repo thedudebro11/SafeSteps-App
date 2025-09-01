@@ -1,24 +1,23 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "target": "es2017",
-    "lib": ["dom", "es2017"],
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM"],
+    "module": "ESNext",
     "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "customConditions": ["react-native"]
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "customConditions": ["react-native"],
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "baseUrl": ".",
+    "paths": { "@/*": ["src/*"], "@ui/*": ["src/ui/*"] }
   },
-  "files": [
-    "src/types/global.d.ts",
-    "src/types/cssInterop.d.ts"
-  ],
-  "include": ["App.tsx", "src/**/*", "src/types/**/*"]
+  "files": ["src/types/global.d.ts", "src/types/cssinterop.d.ts"],
+  "include": ["App.tsx", "src/**/*"]
 }

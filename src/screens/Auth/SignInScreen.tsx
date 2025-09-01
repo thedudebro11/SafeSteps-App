@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, Alert } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { Alert } from 'react-native'; // Alert isn’t styled; import from RN
 import { supabase } from '../../lib/supabase';
 export default function SignInScreen({ navigation }: any) {
   const [email, setEmail] = React.useState('');

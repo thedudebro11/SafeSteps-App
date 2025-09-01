@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Alert } from 'react-native';
+import { Platform } from 'react-native'; // keep non-view APIs here
 import MapView from 'react-native-maps';
 import TopBar from '../components/TopBar';
 import EmergencyButton from '../components/EmergencyButton';
