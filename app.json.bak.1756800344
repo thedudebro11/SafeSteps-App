@@ -6,30 +6,27 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
+
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "runtimeVersion": {
-      "policy": "sdkVersion"
-    },
+    "assetBundlePatterns": ["**/*"],
+
+    "runtimeVersion": { "policy": "sdkVersion" },
+
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.safesteps.app",
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "SafeSteps uses your location to show your live position on the map.",
         "NSLocationAlwaysAndWhenInUseUsageDescription": "SafeSteps needs your location in the background for Active Tracking and Emergency mode.",
-        "UIBackgroundModes": [
-          "location",
-          "processing"
-        ]
+        "UIBackgroundModes": ["location", "processing"]
       }
     },
+
     "android": {
       "package": "com.safesteps.app",
       "permissions": [
@@ -40,15 +37,14 @@
         "WAKE_LOCK",
         "VIBRATE",
         "INTERNET",
-        "POST_NOTIFICATIONS",
-        "android.permission.ACCESS_COARSE_LOCATION",
-        "android.permission.ACCESS_FINE_LOCATION"
+        "POST_NOTIFICATIONS"
       ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
+
     "plugins": [
       [
         "expo-location",
@@ -59,14 +55,12 @@
       "expo-notifications",
       "expo-secure-store"
     ],
+
     "extra": {
+      "eas": { "projectId": "placeholder-project-id" },
       "SUPABASE_URL": "https://YOUR-PROJECT.supabase.co",
       "SUPABASE_ANON_KEY": "YOUR_SUPABASE_ANON_KEY",
-      "API_BASE_URL": "https://api.safesteps.yourdomain.com",
-      "eas": {
-        "projectId": "9ddfe9ec-ef9e-4577-8cfa-4558e27b064c"
-      }
-    },
-    "owner": "thedevguy0101"
+      "API_BASE_URL": "https://api.safesteps.yourdomain.com"
+    }
   }
 }
