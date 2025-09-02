@@ -8,9 +8,10 @@
       "developmentClient": true,
       "distribution": "internal",
       "env": {
-        "EXPO_KOTLIN_VERSION": "1.9.24",
-        "ORG_GRADLE_PROJECT_expo_kotlinVersion": "1.9.24",
-        "ORG_GRADLE_PROJECT_kotlinVersion": "1.9.24"
+        "KOTLIN_VERSION": "1.9.22",
+        "EXPO_KOTLIN_VERSION": "1.9.22",
+        "ORG_GRADLE_PROJECT_expo_kotlinVersion": "1.9.22",
+        "ORG_GRADLE_PROJECT_kotlinVersion": "1.9.22"
       }
     },
     "production": {
