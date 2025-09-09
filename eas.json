@@ -7,7 +7,6 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "buildNumber":2,
       "env": {
         "EXPO_KOTLIN_VERSION": "2.0.21",
         "ORG_GRADLE_PROJECT_kotlinVersion": "2.0.21",
