@@ -13,10 +13,7 @@
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": ["**/*"],
-    "runtimeVersion": {
-      "android": "1.0.0",
-      "ios": "1.0.0"
-    },
+    "runtimeVersion": "1.0.0",
     "updates": {
       "enabled": false
     },
