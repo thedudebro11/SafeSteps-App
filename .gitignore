@@ -9,7 +9,6 @@ yarn-error.log
 dist/
 web-build/
 ios/
-android/
 
 # OS / editor
 .DS_Store
