@@ -1,50 +1,10 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-ext {
-  // kotlin plugin version (overridable via -Pandroid.kotlinVersion)
-  kotlinVersion = (project.properties.get("android.kotlinVersion") ?: "2.0.21")
 
-  compileSdkVersion = Integer.parseInt(project.properties.get("android.compileSdkVersion") ?: "35")
-  targetSdkVersion  = Integer.parseInt(project.properties.get("android.targetSdkVersion")  ?: "35")
-  buildToolsVersion = (project.properties.get("android.buildToolsVersion") ?: "35.0.0")
-}
-
-ext {
-  // Read from gradle.properties, default to 24
-  minSdkVersion = Integer.parseInt(project.properties.get("android.minSdkVersion") ?: "24")
-}
-
-buildscript {
-  repositories {
-    google()
-    mavenCentral()
+// Force compileSdk 35 for every Android module
+subprojects {
+  plugins.withId("com.android.library") {
+    android { compileSdk 35 }
   }
-  dependencies {
-    classpath('com.android.tools.build:gradle')
-    classpath('com.facebook.react:react-native-gradle-plugin')
-    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:" + kotlinVersion)
+  plugins.withId("com.android.application") {
+    android { compileSdk 35 }
   }
 }
-
-def reactNativeAndroidDir = new File(
-  providers.exec {
-    workingDir(rootDir)
-    commandLine("node", "--print", "require.resolve('react-native/package.json')")
-  }.standardOutput.asText.get().trim(),
-  "../android"
-)
-
-allprojects {
-  repositories {
-    maven {
-      // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
-      url(reactNativeAndroidDir)
-    }
-
-    google()
-    mavenCentral()
-    maven { url 'https://www.jitpack.io' }
-  }
-}
-
-apply plugin: "expo-root-project"
-apply plugin: "com.facebook.react.rootproject"
