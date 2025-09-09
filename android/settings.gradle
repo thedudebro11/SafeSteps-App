@@ -1,4 +1,11 @@
 pluginManagement {
+  resolutionStrategy {
+    eachPlugin {
+      if (requested.id.id.startsWith("org.jetbrains.kotlin")) {
+        useVersion(settings.hasProperty("android.kotlinVersion") ? settings["android.kotlinVersion"] : "2.0.21")
+      }
+    }
+  }
   def reactNativeGradlePlugin = new File(
     providers.exec {
       workingDir(rootDir)
