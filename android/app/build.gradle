@@ -82,14 +82,14 @@ def enableProguardInReleaseBuilds = (findProperty('android.enableProguardInRelea
 android {
     ndkVersion rootProject.ext.ndkVersion
 
-    buildToolsVersion "35.0.0"
-compileSdk 35
+    buildToolsVersion "34.0.0"
+compileSdk 34
 
     namespace 'com.safesteps.app'
     defaultConfig {
         applicationId 'com.safesteps.app'
         minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion 35
+        targetSdkVersion 34
         versionCode 2
         versionName "1.0.0"
     }
