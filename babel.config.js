@@ -11,7 +11,7 @@ module.exports = function (api) {
 
       // If you use these packages, leave them; otherwise they’re harmless
       'nativewind/babel',
-      'react-native-css-interop/babel',
+      
 
       // Reanimated must be last
       'react-native-reanimated/plugin',
