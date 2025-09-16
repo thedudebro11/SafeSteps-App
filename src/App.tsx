@@ -12,11 +12,8 @@ import { queryClient } from '@/state/queryClient';               // or './src/st
 import RootNavigator from '@/navigation/RootNavigator';          // or './src/navigation/RootNavigator'
 import { registerBackgroundTask } from '@/tasks/locationTask';   // or './src/tasks/locationTask'
 
-// ❌ Remove CSS import (no css-interop now)
-// import './src/styles/global.css';
 
-// ❌ Usually not needed; remove unless it exports something required
-// import './styles/tailwind';
+
 
 export default function App() {
   useEffect(() => {
