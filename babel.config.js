@@ -9,7 +9,7 @@ module.exports = function (api) {
       }],
       // Reanimated must be last
       'nativewind/babel',
-      'react-native-reanimated/plugin',
+      'react-native-reanimated/plugin'
     ],
   };
 };
