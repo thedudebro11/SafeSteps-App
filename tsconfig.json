@@ -17,18 +17,13 @@
 
     "customConditions": ["react-native"],
 
-    // ✨ Key additions
-    "types": ["react", "react-native", "jest"],
-
-    // Keep your path aliases
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
       "@ui/*": ["src/ui/*"]
     }
   },
-
-  // Keep your project files
-  "files": ["src/types/global.d.ts", "src/types/cssinterop.d.ts"],
-  "include": ["App.tsx", "src/**/*"]
+  "files": ["src/types/global.d.ts"],
+  "include": ["App.tsx", "src/**/*"],
+  "exclude": ["node_modules", "**/__tests__/**", "**/*.test.*"]
 }
