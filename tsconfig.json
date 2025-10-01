@@ -23,7 +23,10 @@
       "@ui/*": ["src/ui/*"]
     }
   },
-  "files": ["src/types/global.d.ts"],
+   "files": [
+    "src/types/global.d.ts",
+    "src/types/nativewind.d.ts"
+  ],
   "include": ["App.tsx", "src/**/*"],
   "exclude": ["node_modules", "**/__tests__/**", "**/*.test.*"]
 }
