@@ -8,6 +8,7 @@ module.exports = function (api) {
         alias: { '@': './src', '@ui': './src/ui' },
       }],
       // Reanimated must be last
+      'nativewind/babel',
       'react-native-reanimated/plugin',
     ],
   };

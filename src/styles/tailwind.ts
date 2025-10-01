@@ -1,1 +1,1 @@
-// NativeWind enabled via babel & tailwind preset.
+// NativeWind enabled via ss & tailwind preset.
