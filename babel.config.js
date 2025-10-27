@@ -1,8 +1,8 @@
-// babel.config.js (TEMP MINIMAL)
+// babel.config.js  (TEMP MINIMAL)
 module.exports = function (api) {
   api.cache(true);
   return {
     presets: ['babel-preset-expo'],
-    plugins: ['react-native-reanimated/plugin'],
+    plugins: ['react-native-reanimated/plugin'], // must be last
   };
 };

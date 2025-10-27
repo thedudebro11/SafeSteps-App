@@ -2,6 +2,7 @@
   "expo": {
     "name": "SafeSteps",
     "slug": "safesteps",
+    "jsEngine":"hermes",
     "scheme": "safesteps",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -69,6 +70,7 @@
         "projectId": "9ddfe9ec-ef9e-4577-8cfa-4558e27b064c"
       }
     },
-    "owner": "thedevguy0101"
+    "owner": "thedevguy0101",
+    "platforms": ["android", "ios"]
   }
 }
