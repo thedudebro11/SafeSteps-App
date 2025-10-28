@@ -8,8 +8,8 @@ module.exports = function (api) {
         extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
         alias: { '@': './src', '@ui': './src/ui' },
       }],
-      'nativewind/babel',
-      'react-native-reanimated/plugin', // must be last
+      // 'nativewind/babel',            // ⛔️ TEMPORARILY COMMENTED OUT
+      'react-native-reanimated/plugin', // MUST be last
     ],
   };
 };
