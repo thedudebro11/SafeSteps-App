@@ -2,7 +2,7 @@
   "expo": {
     "name": "SafeSteps",
     "slug": "safesteps",
-    "jsEngine":"hermes",
+    "jsEngine": "hermes",
     "scheme": "safesteps",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,7 +13,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "runtimeVersion": "1.0.0",
     "updates": {
       "enabled": false
@@ -24,7 +26,10 @@
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "SafeSteps uses your location to show your live position on the map.",
         "NSLocationAlwaysAndWhenInUseUsageDescription": "SafeSteps needs your location in the background for Active Tracking and Emergency mode.",
-        "UIBackgroundModes": ["location", "processing"]
+        "UIBackgroundModes": [
+          "location",
+          "processing"
+        ]
       }
     },
     "android": {
@@ -61,7 +66,8 @@
             "newArchEnabled": false
           }
         }
-      ]
+      ],
+      "expo-asset"
     ],
     "extra": {
       "SUPABASE_URL": "https://YOUR-PROJECT.supabase.co",
@@ -72,6 +78,9 @@
       }
     },
     "owner": "thedevguy0101",
-    "platforms": ["android", "ios"]
+    "platforms": [
+      "android",
+      "ios"
+    ]
   }
 }
