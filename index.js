@@ -1,7 +1,7 @@
 // index.js
-import 'react-native-gesture-handler';
-import 'react-native-reanimated'; // OK as a side-effect import
-import 'expo-dev-client';
+import 'react-native-reanimated';          // 1) reanimated FIRST
+import 'react-native-gesture-handler';     // 2)
+import 'expo-dev-client';                  // 3)
 
 import { registerRootComponent } from 'expo';
 import App from './src/App';
