@@ -8,7 +8,7 @@ module.exports = function (api) {
         extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
         alias: { '@': './src', '@ui': './src/ui' },
       }],
-      // 'nativewind/babel',            // ⛔️ TEMPORARILY COMMENTED OUT
+      'nativewind/babel',            
       'react-native-reanimated/plugin', // MUST be last
     ],
   };

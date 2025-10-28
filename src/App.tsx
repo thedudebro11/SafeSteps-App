@@ -1,6 +1,6 @@
 // MUST be first for React Native Gesture Handler
 import 'react-native-gesture-handler';
-import './global.css';
+import './styles/global.css';
 
 
 import React, { useEffect } from 'react';
