@@ -1,8 +1,15 @@
-// babel.config.js (TEMP MINIMAL)
+// babel.config.js
 module.exports = function (api) {
   api.cache(true);
   return {
     presets: ['babel-preset-expo'],
-    plugins: ['react-native-reanimated/plugin'],
+    plugins: [
+      ['module-resolver', {
+        extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
+        alias: { '@': './src', '@ui': './src/ui' },
+      }],
+      'nativewind/babel',            
+      'react-native-reanimated/plugin', // MUST be last
+    ],
   };
 };

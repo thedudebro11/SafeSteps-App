@@ -27,3 +27,6 @@ ios/
 *.ipa
 *.apk
 *.aab
+android/
+ios/
+
